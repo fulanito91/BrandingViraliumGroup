@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viralium Group — Identidad de Marca</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Maitree:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Maitree:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --orange: #F5A524;
+    --gray: #626262;
+    --black: #1a1a1a;
+    --white: #ffffff;
+    --light: #f8f6f2;
+    --border: #e8e4de;
+  }
+
+  body {
+    background: var(--light);
+    width: 1200px;
+    font-family: 'Maitree', serif;
+    color: var(--black);
+  }
+
+  .page {
+    padding: 64px;
+    background: var(--light);
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--orange);
+  }
+
+  .brand-mark {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+.v-symbol {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.v-symbol img {
+  width: 100%;
+  height: 120%;
+  object-fit: contain;
+}
+
+  .brand-name {
+    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .doc-label {
+    font-family: 'Maitree', serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--gray);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  /* SECTION TITLES */
+  .section-title {
+    font-family: 'Maitree', serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 24px;
+  }
+
+  /* GRID LAYOUT */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  /* COLOR SECTION */
+  .color-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+  }
+
+  .color-swatch {
+    height: 160px;
+    width: 100%;
+  }
+
+  .swatch-orange { background: #F5A524; }
+  .swatch-gray   { background: #626262; }
+
+  .color-info {
+    padding: 20px 24px;
+  }
+
+  .color-name {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 6px;
+  }
+
+  .color-hex {
+    font-family: 'Maitree', serif;
+    font-size: 13px;
+    color: var(--gray);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .color-use {
+    font-family: 'Maitree', serif;
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  /* COLOR COMBOS */
+  .combo-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .combo-chip {
+    padding: 8px 16px;
+    font-family: 'Maitree', serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .chip-1 { background: #F5A524; color: #1a1a1a; }
+  .chip-2 { background: #626262; color: #ffffff; }
+  .chip-3 { background: #1a1a1a; color: #F5A524; }
+  .chip-4 { background: #f8f6f2; color: #626262; border: 1px solid #e8e4de; }
+
+  /* TYPOGRAPHY SECTION */
+  .type-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 32px;
+  }
+
+  .type-label {
+    font-family: 'Maitree', serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .type-specimen-1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.1;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+
+  .type-specimen-2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  .type-meta {
+    font-family: 'Maitree', serif;
+    font-size: 11px;
+    color: var(--gray);
+    letter-spacing: 1px;
+  }
+
+  .type-specimen-montaga {
+    font-family: 'Noto Serif', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 1.2;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .type-specimen-maitree {
+    font-family: 'Maitree', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .type-specimen-maitree-small {
+    font-family: 'Maitree', serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  /* SLOGAN SECTION */
+  .slogan-block {
+    background: var(--black);
+    padding: 48px 64px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  .slogan-text {
+    font-family: 'Noto Serif', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    flex: 1;
+  }
+
+  .slogan-text span {
+    color: var(--orange);
+  }
+
+  .slogan-divider {
+    width: 2px;
+    height: 80px;
+    background: var(--orange);
+    flex-shrink: 0;
+  }
+
+  .slogan-desc {
+    font-family: 'Maitree', serif;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  /* VALUES */
+  .values-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--border);
+    margin-bottom: 40px;
+  }
+
+  .value-item {
+    background: var(--white);
+    padding: 28px 28px 28px 28px;
+    position: relative;
+  }
+
+  .value-number {
+    font-family: 'Noto Serif', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--orange);
+    opacity: 0.15;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    line-height: 1;
+  }
+
+  .value-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 10px;
+  }
+
+  .value-text {
+    font-family: 'Maitree', serif;
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.65;
+  }
+
+  /* INSTAGRAM STYLE */
+  .instagram-block {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 32px;
+    margin-bottom: 40px;
+  }
+
+  .ig-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    margin-top: 20px;
+  }
+
+  .ig-post {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .ig-1 { background: var(--orange); }
+  .ig-2 { background: var(--black); }
+  .ig-3 { background: #f0ece4; }
+  .ig-4 { background: var(--black); }
+  .ig-5 { background: var(--orange); }
+  .ig-6 { background: #f0ece4; }
+
+  .ig-label {
+    font-family: 'Maitree', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .ig-1 .ig-label, .ig-5 .ig-label { color: var(--black); }
+  .ig-2 .ig-label, .ig-4 .ig-label { color: var(--orange); }
+  .ig-3 .ig-label, .ig-6 .ig-label { color: var(--gray); }
+
+  .ig-text {
+    font-family: 'Noto Serif', serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .ig-1 .ig-text, .ig-5 .ig-text { color: var(--black); }
+  .ig-2 .ig-text, .ig-4 .ig-text { color: var(--white); }
+  .ig-3 .ig-text, .ig-6 .ig-text { color: var(--black); }
+
+  /* FOOTER */
+  .doc-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-brand {
+    font-family: 'Noto Serif', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .footer-note {
+    font-family: 'Maitree', serif;
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 1px;
+  }
+
+  .orange-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--orange);
+    margin-bottom: 64px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="brand-mark">
+      <div class="v-symbol">
+  <img src="img/sin_fonodo.png" alt="V Viralium">
+</div>
+      <div class="brand-name">Viralium Group</div>
+    </div>
+    <div class="doc-label">Manual de Identidad de Marca</div>
+  </div>
+
+  <!-- COLORES -->
+  <div class="section-title">01 — Paleta de colores corporativa</div>
+  <div class="grid-2" style="margin-bottom: 16px;">
+    <div class="color-card">
+      <div class="color-swatch swatch-orange"></div>
+      <div class="color-info">
+        <div class="color-name">Naranja Viralium</div>
+        <div class="color-hex">#F5A524</div>
+        <div class="color-use">Color principal de marca. Llamadas a la acción, énfasis visual, elementos de identidad primarios.</div>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch swatch-gray"></div>
+      <div class="color-info">
+        <div class="color-name">Gris Antracita</div>
+        <div class="color-hex">#626262</div>
+        <div class="color-use">Color de equilibrio. Tipografía secundaria, fondos neutros, contraste visual con el naranja.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="combo-row" style="margin-bottom: 48px;">
+    <div class="combo-chip chip-1">Texto sobre naranja</div>
+    <div class="combo-chip chip-2">Texto sobre gris</div>
+    <div class="combo-chip chip-3">Naranja sobre negro</div>
+    <div class="combo-chip chip-4">Gris sobre blanco cálido</div>
+  </div>
+
+  <!-- TIPOGRAFÍA -->
+  <div class="section-title">02 — Sistema tipográfico</div>
+  <div class="grid-3">
+    <div class="type-card">
+      <div class="type-label">Título principal · Noto Serif</div>
+      <div class="type-specimen-1">Viralium<br>Group</div>
+      <div class="type-specimen-2">Marketing para restaurantes</div>
+      <div class="type-meta">Noto Serif — Bold 700<br>Cabeceras principales</div>
+    </div>
+    <div class="type-card">
+      <div class="type-label">Título secundario · Montaga</div>
+      <div class="type-specimen-montaga">Estrategia<br>Digital</div>
+      <div style="height: 28px;"></div>
+      <div class="type-meta">Montaga — Regular 400<br>Subtítulos y secciones</div>
+    </div>
+    <div class="type-card">
+      <div class="type-label">Cuerpo de texto · Maitree</div>
+      <div class="type-specimen-maitree">Cada proyecto es un reto distinto y se aborda como tal, con compromiso y atención al detalle.</div>
+      <div class="type-specimen-maitree-small">Desarrollamos soluciones digitales claras para mejorar la presencia online de cada negocio.</div>
+      <div class="type-meta">Maitree — Regular / Light<br>Párrafos y descripciones</div>
+    </div>
+  </div>
+
+  <!-- ESLOGAN -->
+  <div class="section-title">03 — Eslogan de marca</div>
+  <div class="slogan-block">
+    <div class="slogan-text">Todo lo que necesita<br>tu negocio para <span>CRECER</span></div>
+    <div class="slogan-divider"></div>
+    <div class="slogan-desc">Un claim directo, sin jerga de marketing. Le dice al hostelero exactamente lo que necesita escuchar: aquí está todo lo que necesitas, sin complicaciones ni promesas vacías.</div>
+  </div>
+
+  <!-- VALORES -->
+  <div class="section-title">04 — Valores de marca</div>
+  <div class="values-block">
+    <div class="value-item">
+      <div class="value-number">01</div>
+      <div class="value-title">Cada proyecto es único</div>
+      <div class="value-text">Cada empresa es diferente. Cada proyecto supone un nuevo reto que se aborda con compromiso y atención al detalle desde el primer día.</div>
+    </div>
+    <div class="value-item">
+      <div class="value-number">02</div>
+      <div class="value-title">El cliente, siempre primero</div>
+      <div class="value-text">La prioridad es entender el negocio del cliente, sus objetivos y sus necesidades reales, no vender un paquete estándar.</div>
+    </div>
+    <div class="value-item">
+      <div class="value-number">03</div>
+      <div class="value-title">Resultados medibles</div>
+      <div class="value-text">Soluciones digitales claras que mejoran la presencia online y generan nuevas oportunidades de venta. Sin métricas vacías.</div>
+    </div>
+  </div>
+
+  <!-- INSTAGRAM -->
+  <div class="section-title">05 — Estilo editorial Instagram</div>
+  <div class="instagram-block">
+    <div style="font-family: 'Maitree', serif; font-size: 13px; color: var(--gray); line-height: 1.6; max-width: 700px;">
+      El formato protagonista es el <strong>reel corto y directo</strong>: antes y después de presencia digital, resultados de campaña, automatizaciones en acción. Contenido que un hostelero entiende en 30 segundos, sin necesitar saber de marketing.
+    </div>
+    <div class="ig-grid">
+      <div class="ig-post ig-1">
+        <div class="ig-label">Reel</div>
+        <div class="ig-text">Antes vs Después</div>
+      </div>
+      <div class="ig-post ig-2">
+        <div class="ig-label">Resultado</div>
+        <div class="ig-text">+340% alcance en 30 días</div>
+      </div>
+      <div class="ig-post ig-3">
+        <div class="ig-label">Proceso</div>
+        <div class="ig-text">Así gestionamos tus redes</div>
+      </div>
+      <div class="ig-post ig-4">
+        <div class="ig-label">IA</div>
+        <div class="ig-text">Automatización para tu local</div>
+      </div>
+      <div class="ig-post ig-5">
+        <div class="ig-label">Web</div>
+        <div class="ig-text">Tu web en 7 días</div>
+      </div>
+      <div class="ig-post ig-6">
+        <div class="ig-label">Cliente</div>
+        <div class="ig-text">Caso real: Restaurante Granada</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div class="footer-brand">Viralium Group · Ismael Jiménez Ramos</div>
+    <div class="footer-note">Plan de Empresa — PFC Marketing y Publicidad · UAX Alfonso X El Sabio · 2026</div>
+  </div>
+
+</div>
+</body>
+</html>
